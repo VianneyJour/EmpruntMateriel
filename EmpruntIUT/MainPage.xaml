@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmpruntIUT.MainPage"
+             xmlns:ext="clr-namespace:EmpruntIUT.Resources.Localization">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="{DynamicResource PrimaryBackgroundColor}">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="{Binding Hello, Source={StaticResource AppResources}}"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                TextColor="{DynamicResource PrimaryForegroundColor}"/>
+
+            <Label
+                Text="{Binding Welcom, Source={StaticResource AppResources}}"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                TextColor="{DynamicResource SecondaryForegroundColor}"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="{Binding Button, Source={StaticResource AppResources}}" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                TextColor="{DynamicResource PrimaryForegroundColor}"
+                BackgroundColor="{DynamicResource SecondaryBackgroundColor}"/>
+            
+            <Label
+                Text="Welcome to &#10;.NET Multi-platform App UI"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            
+            <Picker x:Name="PickerTheme"
+                    Title="{Binding SelectTheme, Source={StaticResource AppResources}}"
+                    SelectedIndexChanged="picker_SelectedTheme"
+                    TextColor="{DynamicResource PrimaryForegroundColor}"
+                    BackgroundColor="{DynamicResource SecondaryBackgroundColor}" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Dark</x:String>
+                        <x:String>Light</x:String>
+                        <x:String>Color Blind</x:String>
+                        <x:String>Odin</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <Picker x:Name="PickerLocalization"
+                    Title="Language"
+                    SelectedItem="{Binding Culture, Source={StaticResource AppResources}, Converter={StaticResource CultureInfo2StringConverter}}"
+                    TextColor="{DynamicResource PrimaryForegroundColor}"
+                    BackgroundColor="{DynamicResource SecondaryBackgroundColor}" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>en</x:String>
+                        <x:String>fr-FR</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

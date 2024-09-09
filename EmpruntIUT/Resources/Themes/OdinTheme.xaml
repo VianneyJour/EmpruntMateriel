@@ -1,0 +1,9 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="EmpruntIUT.Resources.Themes.OdinTheme">
+    <Color x:Key="PrimaryBackgroundColor">#29363f</Color>
+    <Color x:Key="SecondaryBackgroundColor">#a3a3ff</Color>
+
+    <Color x:Key="PrimaryForegroundColor">#f4511e</Color>
+    <Color x:Key="SecondaryForegroundColor">#20bb20</Color>
+</ResourceDictionary>
