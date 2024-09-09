@@ -17,8 +17,8 @@ namespace EmpruntIUT.Resources.Localization {
     internal class AppResources {
         
         private static System.Resources.ResourceManager resourceMan;
-        
         private static System.Globalization.CultureInfo resourceCulture;
+        private static int resourceFontSize;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal AppResources() {
@@ -42,6 +42,18 @@ namespace EmpruntIUT.Resources.Localization {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+
+        internal static int FontSize
+        {
+            get
+            {
+                return AppResources.resourceFontSize;
+            }
+            set
+            {
+                AppResources.resourceFontSize = value;
             }
         }
 

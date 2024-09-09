@@ -8,6 +8,17 @@ public class AppResourcesVM : INotifyPropertyChanged
     void OnPropertyChanged(string propertyName)
         => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     
+    public int FontSize
+    {
+        get => AppResources.FontSize;
+        set
+        {
+            if (AppResources.FontSize == value) return;
+            AppResources.FontSize = value;
+            OnPropertyChanged("FontSize");
+        }
+    }
+    
     public System.Globalization.CultureInfo Culture
     {
         get => AppResources.Culture;
