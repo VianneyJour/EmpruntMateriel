@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpruntIUT", "EmpruntIUT\EmpruntIUT.csproj", "{1DF3E391-70E0-4E13-AC19-151136977529}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmpruntIUT", "EmpruntIUT\EmpruntIUT.csproj", "{1DF3E391-70E0-4E13-AC19-151136977529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,7 +13,11 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1DF3E391-70E0-4E13-AC19-151136977529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1DF3E391-70E0-4E13-AC19-151136977529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF3E391-70E0-4E13-AC19-151136977529}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{1DF3E391-70E0-4E13-AC19-151136977529}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DF3E391-70E0-4E13-AC19-151136977529}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmpruntIUT.Connexion"
+             Title="Connexion">
+    <VerticalStackLayout>
+        <Image
+            Source="uca_logo.png"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="Université Clermont Auvergne logo" />
+        <Entry x:Name="email"
+               Placeholder="Enter your email"
+               Keyboard="Email"
+               ClearButtonVisibility="WhileEditing"
+               ReturnType="Next"
+               IsSpellCheckEnabled="false"/>
+        <Entry x:Name="password"
+               IsPassword="True"
+               Placeholder="password"
+               ClearButtonVisibility="WhileEditing"
+               ReturnType="Go"
+               IsSpellCheckEnabled="false"/>
+        <Button
+            />
+    </VerticalStackLayout>
+</ContentPage>
