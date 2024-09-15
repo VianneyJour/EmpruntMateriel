@@ -3,7 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmpruntIUT.Connexion"
              Title="Connexion">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="{DynamicResource PrimaryBackgroundColor}">
         <Image
             Source="uca_logo.png"
             HeightRequest="185"
@@ -14,14 +17,21 @@
                Keyboard="Email"
                ClearButtonVisibility="WhileEditing"
                ReturnType="Next"
-               IsSpellCheckEnabled="false"/>
+               IsSpellCheckEnabled="false"
+               TextColor="{DynamicResource PrimaryForegroundColor}"/>
         <Entry x:Name="password"
                IsPassword="True"
                Placeholder="password"
                ClearButtonVisibility="WhileEditing"
                ReturnType="Go"
-               IsSpellCheckEnabled="false"/>
+               IsSpellCheckEnabled="false"
+               TextColor="{DynamicResource PrimaryForegroundColor}"/>
         <Button
-            />
+            x:Name="ConnectBtn"
+            Text="{Binding Connect, Source={StaticResource AppResources}}" 
+            SemanticProperties.Hint="Connect to your account"
+            HorizontalOptions="Fill"
+            TextColor="{DynamicResource PrimaryForegroundColor}"
+            BackgroundColor="{DynamicResource SecondaryBackgroundColor}"/>
     </VerticalStackLayout>
 </ContentPage>

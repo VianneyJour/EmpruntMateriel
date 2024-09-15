@@ -1,4 +1,5 @@
 ﻿using EmpruntIUT.Resources.Themes;
+using EmpruntIUT.Resources.Styles;
 
 namespace EmpruntIUT;
 
@@ -29,11 +30,11 @@ public partial class MainPage : ContentPage
 
         ResourceDictionary chosenTheme = chosenThemeString switch 
         {
-            "Light" => new LightTheme(),
             "Dark" => new DarkTheme(),
+            "Light" => new LightTheme(),
             "Color Blind" => new ColorBlindTheme(),
             "Odin" => new OdinTheme(),
-            _ => new LightTheme()
+            _ => new DarkTheme()
         };
         
         ICollection<ResourceDictionary> mergedDictionaries = Application.Current.Resources.MergedDictionaries;
@@ -44,6 +45,29 @@ public partial class MainPage : ContentPage
                 mergedDictionaries.Remove(dico);
             }
             mergedDictionaries.Add(chosenTheme);
+        }
+    }
+    
+    void picker_SelectedFontSize(object source, EventArgs args)
+    {
+        string? chosenFontSizeString = PickerFontSize.SelectedItem as string;
+
+        ResourceDictionary chosenFontSize = chosenFontSizeString switch 
+        {
+            "Small" => new SmallFont(),
+            "Medium" => new MediumFont(),
+            "Big" => new BigFont(),
+            _ => new SmallFont()
+        };
+        
+        ICollection<ResourceDictionary> mergedDictionaries = Application.Current.Resources.MergedDictionaries;
+        if (mergedDictionaries != null)
+        {
+            foreach(var dico in mergedDictionaries.Where(d => d is ICustomFontSize).ToList())
+            {
+                mergedDictionaries.Remove(dico);
+            }
+            mergedDictionaries.Add(chosenFontSize);
         }
     }
 }

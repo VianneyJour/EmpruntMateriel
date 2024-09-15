@@ -18,7 +18,6 @@ namespace EmpruntIUT.Resources.Localization {
         
         private static System.Resources.ResourceManager resourceMan;
         private static System.Globalization.CultureInfo resourceCulture;
-        private static int resourceFontSize;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal AppResources() {
@@ -42,18 +41,6 @@ namespace EmpruntIUT.Resources.Localization {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-
-        internal static int FontSize
-        {
-            get
-            {
-                return AppResources.resourceFontSize;
-            }
-            set
-            {
-                AppResources.resourceFontSize = value;
             }
         }
 
@@ -86,6 +73,14 @@ namespace EmpruntIUT.Resources.Localization {
             get
             {
                 return ResourceManager.GetString("SelectTheme", resourceCulture);
+            }
+        }
+
+        internal static string Connect
+        {
+            get
+            {
+                return ResourceManager.GetString("Connect", resourceCulture);
             }
         }
     }

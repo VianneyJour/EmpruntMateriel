@@ -1,0 +1,9 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime"
+                    x:Class="EmpruntIUT.Resources.Styles.BigFont">
+    <system:Double x:Key="Title">36</system:Double>
+    <system:Double x:Key="Subtitle">29</system:Double>
+    <system:Double x:Key="Normal">25</system:Double>
+    <system:Double x:Key="Detail">15</system:Double>
+</ResourceDictionary>

@@ -18,7 +18,7 @@
             <Label
                 Text="{Binding Hello, Source={StaticResource AppResources}}"
                 Style="{StaticResource Headline}"
-                FontSize="{Binding FontSize, Source={StaticResource AppResources}}"
+                FontSize="{DynamicResource Title}"
                 SemanticProperties.HeadingLevel="Level1"
                 TextColor="{DynamicResource PrimaryForegroundColor}"/>
 
@@ -27,7 +27,8 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                TextColor="{DynamicResource SecondaryForegroundColor}"/>
+                TextColor="{DynamicResource SecondaryForegroundColor}"
+                FontSize="{DynamicResource Subtitle}"/>
 
             <Button
                 x:Name="CounterBtn"
@@ -42,7 +43,8 @@
                 Text="Welcome to &#10;.NET Multi-platform App UI"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="{DynamicResource Normal}"/>
             
             <Picker x:Name="PickerTheme"
                     Title="{Binding SelectTheme, Source={StaticResource AppResources}}"
@@ -73,14 +75,15 @@
             </Picker>
             
             <Picker x:Name="PickerFontSize"
-                    Title="FontSize"
-                    SelectedItem="{Binding FontSize, Source={StaticResource AppResources}}"
+                    Title="Select a fontsize"
+                    SelectedIndexChanged="picker_SelectedFontSize"
                     TextColor="{DynamicResource PrimaryForegroundColor}"
                     BackgroundColor="{DynamicResource SecondaryBackgroundColor}" >
                 <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:Int16}">
-                        <x:Int16>24</x:Int16>
-                        <x:Int16>50</x:Int16>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Big</x:String>
+                        <x:String>Medium</x:String>
+                        <x:String>Small</x:String>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>

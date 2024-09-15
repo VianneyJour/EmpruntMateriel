@@ -133,4 +133,8 @@
     <value>Select a theme</value>
     <comment/>
   </data>
+  <data name="Connect" xml:space="preserve">
+    <value>Connect</value>
+    <comment/>
+  </data>
 </root>

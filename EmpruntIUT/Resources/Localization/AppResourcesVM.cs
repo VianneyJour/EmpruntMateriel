@@ -8,17 +8,6 @@ public class AppResourcesVM : INotifyPropertyChanged
     void OnPropertyChanged(string propertyName)
         => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     
-    public int FontSize
-    {
-        get => AppResources.FontSize;
-        set
-        {
-            if (AppResources.FontSize == value) return;
-            AppResources.FontSize = value;
-            OnPropertyChanged("FontSize");
-        }
-    }
-    
     public System.Globalization.CultureInfo Culture
     {
         get => AppResources.Culture;
@@ -31,6 +20,7 @@ public class AppResourcesVM : INotifyPropertyChanged
             OnPropertyChanged("Welcome");
             OnPropertyChanged("Button");
             OnPropertyChanged("SelectTheme");
+            OnPropertyChanged("Connect");
         }
     }
     
@@ -38,4 +28,6 @@ public class AppResourcesVM : INotifyPropertyChanged
     public string Welcom => AppResources.Welcom;
     public string Button => AppResources.Button;
     public string SelectTheme => AppResources.SelectTheme;
+    public string Connect => AppResources.Connect;
+
 }
