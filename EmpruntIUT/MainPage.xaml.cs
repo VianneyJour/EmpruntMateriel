@@ -46,6 +46,8 @@ public partial class MainPage : ContentPage
             }
             mergedDictionaries.Add(chosenTheme);
         }
+        
+        Preferences.Default.Set("Theme", chosenThemeString);
     }
     
     void picker_SelectedFontSize(object source, EventArgs args)
@@ -69,5 +71,7 @@ public partial class MainPage : ContentPage
             }
             mergedDictionaries.Add(chosenFontSize);
         }
+        
+        Preferences.Default.Set("FontSize", chosenFontSizeString);
     }
 }

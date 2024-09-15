@@ -53,8 +53,8 @@
                     BackgroundColor="{DynamicResource SecondaryBackgroundColor}" >
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
-                        <x:String>Light</x:String>
                         <x:String>Dark</x:String>
+                        <x:String>Light</x:String>
                         <x:String>Color Blind</x:String>
                         <x:String>Odin</x:String>
                     </x:Array>
@@ -81,9 +81,9 @@
                     BackgroundColor="{DynamicResource SecondaryBackgroundColor}" >
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
-                        <x:String>Big</x:String>
-                        <x:String>Medium</x:String>
                         <x:String>Small</x:String>
+                        <x:String>Medium</x:String>
+                        <x:String>Big</x:String>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
