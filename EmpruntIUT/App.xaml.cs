@@ -25,6 +25,14 @@ public partial class App : Application
             case "Odin" :
                 Resources.MergedDictionaries.Add(new OdinTheme());
                 break;
+            case "System" :
+                if (Application.Current.RequestedTheme == AppTheme.Light)
+                    Resources.MergedDictionaries.Add(new LightTheme());
+                else
+                {
+                    Resources.MergedDictionaries.Add(new DarkTheme());
+                }
+                break;
             default :
                 Resources.MergedDictionaries.Add(new DarkTheme());
                 break;

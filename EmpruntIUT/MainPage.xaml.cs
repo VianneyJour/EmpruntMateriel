@@ -27,6 +27,7 @@ public partial class MainPage : ContentPage
     void picker_SelectedTheme(object source, EventArgs args)
     {
         string? chosenThemeString = PickerTheme.SelectedItem as string;
+        AppTheme currentTheme = Application.Current.RequestedTheme;
 
         ResourceDictionary chosenTheme = chosenThemeString switch 
         {
@@ -34,6 +35,7 @@ public partial class MainPage : ContentPage
             "Light" => new LightTheme(),
             "Color Blind" => new ColorBlindTheme(),
             "Odin" => new OdinTheme(),
+            "System" => currentTheme == AppTheme.Dark ? new DarkTheme() : new LightTheme(),
             _ => new DarkTheme()
         };
         

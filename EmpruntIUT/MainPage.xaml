@@ -57,6 +57,7 @@
                         <x:String>Light</x:String>
                         <x:String>Color Blind</x:String>
                         <x:String>Odin</x:String>
+                        <x:String>System</x:String>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
