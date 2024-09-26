@@ -21,6 +21,8 @@ public class AppResourcesVM : INotifyPropertyChanged
             OnPropertyChanged("Button");
             OnPropertyChanged("SelectTheme");
             OnPropertyChanged("Connect");
+            OnPropertyChanged("EnterEmail");
+            OnPropertyChanged("EnterPassword");
         }
     }
     
@@ -29,5 +31,6 @@ public class AppResourcesVM : INotifyPropertyChanged
     public string Button => AppResources.Button;
     public string SelectTheme => AppResources.SelectTheme;
     public string Connect => AppResources.Connect;
-
+    public string EnterEmail => AppResources.Connect;
+    public string EnterPassword => AppResources.Connect;
 }

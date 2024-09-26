@@ -137,4 +137,10 @@
     <value>Connection</value>
     <comment/>
   </data>
+  <data name="EnterEmail" xml:space="preserve">
+    <value>Saisissez votre email</value>
+  </data>
+  <data name="EnterPassword" xml:space="preserve">
+    <value>Saisissez votre mot de passe</value>
+  </data>
 </root>

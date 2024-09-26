@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmpruntIUT.Connexion"
-             Title="Connexion">
+             Title="Connexion"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
     <VerticalStackLayout
             Padding="30,0"
             Spacing="25"
@@ -13,7 +15,7 @@
             Aspect="AspectFit"
             SemanticProperties.Description="Université Clermont Auvergne logo" />
         <Entry x:Name="email"
-               Placeholder="Enter your email"
+               Placeholder="{Binding EnterEmail, Source={StaticResource AppResources}}"
                Keyboard="Email"
                ClearButtonVisibility="WhileEditing"
                ReturnType="Next"

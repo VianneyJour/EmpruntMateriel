@@ -14,20 +14,21 @@ namespace EmpruntIUT.Resources.Localization {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class AppResources {
+    internal class AppResources_fr_FR {
         
         private static System.Resources.ResourceManager resourceMan;
+        
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal AppResources() {
+        internal AppResources_fr_FR() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("EmpruntIUT.Resources.Localization.AppResources", typeof(AppResources).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("EmpruntIUT.Resources.Localization.AppResources_fr_FR", typeof(AppResources_fr_FR).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -43,44 +44,46 @@ namespace EmpruntIUT.Resources.Localization {
                 resourceCulture = value;
             }
         }
-
-        internal static string Hello
-        {
-            get
-            {
+        
+        internal static string Hello {
+            get {
                 return ResourceManager.GetString("Hello", resourceCulture);
             }
         }
         
-        internal static string Welcom
-        {
-            get
-            {
+        internal static string Welcom {
+            get {
                 return ResourceManager.GetString("Welcom", resourceCulture);
             }
         }
         
-        internal static string Button
-        {
-            get
-            {
+        internal static string Button {
+            get {
                 return ResourceManager.GetString("Button", resourceCulture);
             }
         }
         
-        internal static string SelectTheme
-        {
-            get
-            {
+        internal static string SelectTheme {
+            get {
                 return ResourceManager.GetString("SelectTheme", resourceCulture);
             }
         }
-
-        internal static string Connect
-        {
-            get
-            {
+        
+        internal static string Connect {
+            get {
                 return ResourceManager.GetString("Connect", resourceCulture);
+            }
+        }
+        
+        internal static string EnterEmail {
+            get {
+                return ResourceManager.GetString("EnterEmail", resourceCulture);
+            }
+        }
+        
+        internal static string EnterPassword {
+            get {
+                return ResourceManager.GetString("EnterPassword", resourceCulture);
             }
         }
     }
