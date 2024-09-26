@@ -31,6 +31,6 @@ public class AppResourcesVM : INotifyPropertyChanged
     public string Button => AppResources.Button;
     public string SelectTheme => AppResources.SelectTheme;
     public string Connect => AppResources.Connect;
-    public string EnterEmail => AppResources.Connect;
-    public string EnterPassword => AppResources.Connect;
+    public string EnterEmail => AppResources.EnterEmail;
+    public string EnterPassword => AppResources.EnterPassword;
 }

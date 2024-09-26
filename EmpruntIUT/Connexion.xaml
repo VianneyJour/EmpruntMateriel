@@ -23,7 +23,7 @@
                TextColor="{DynamicResource PrimaryForegroundColor}"/>
         <Entry x:Name="password"
                IsPassword="True"
-               Placeholder="password"
+               Placeholder="{Binding EnterPassword, Source={StaticResource AppResources}}"
                ClearButtonVisibility="WhileEditing"
                ReturnType="Go"
                IsSpellCheckEnabled="false"
